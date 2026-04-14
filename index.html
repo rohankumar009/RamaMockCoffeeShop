@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rahma Coffee &amp; Co.</title>
+
+  <!-- Google Fonts: Inter for body copy and Playfair Display for headings -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital@0;1&family=Inter:wght@400;500;600;700;800&family=Pacifico&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome icons for social links -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkR4j8gYChcA6aL6Lve9c7k0A5TQ8QqC2L1w=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  >
+  <link rel="icon" type="image/png" href="assets/coffee-cup.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Top info bar with opening hours, address, and phone number -->
+  <div class="info-bar">
+    <div class="container">
+      <span class="info-item"><i class="fa-regular fa-clock"></i> Mon-Sun: 10:00 AM-2:00 AM</span>
+      <span class="info-item"><i class="fa-solid fa-location-dot"></i> King Abdulaziz Road, Al Faisaliah, Najran 66261, Saudi Arabia</span>
+      <a class="info-item" href="tel:+966531482761"><i class="fa-solid fa-phone"></i> +966 53 148 2761</a>
+    </div>
+  </div>
+
+  <!-- Sticky header and primary navigation -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="#top" class="logo pacifico-regular" aria-label="Rahma Coffee and Co. home">
+        <span>Rahma Coffee &amp; Co.</span>
+        <img src="assets/coffee-cup.png" alt="" class="logo-cup">
+      </a>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#menu-intro">About</a>
+        <a href="#our-menu">Menu</a>
+        <a href="#community">Community</a>
+        <a href="#location">Location</a>
+        <a href="#stay-in-touch">Social</a>
+      </nav>
+
+      <!-- Mobile hamburger button -->
+      <button class="menu-toggle" type="button" aria-label="Open mobile navigation" aria-expanded="false" aria-controls="mobile-drawer">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile navigation drawer -->
+  <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+    <nav aria-label="Mobile navigation">
+      <a href="#menu-intro">About</a>
+      <a href="#our-menu">Menu</a>
+      <a href="#community">Community</a>
+      <a href="#location">Location</a>
+      <a href="#stay-in-touch">Social</a>
+    </nav>
+  </div>
+
+  <main id="top">
+    <!-- Hero section with full-width image, overlay, and navigation arrows -->
+    <section class="hero">
+      <div class="hero-media fade-in">
+        <img
+          src="assets/hero.jpg"
+          alt="Warm coffee shop interior with cups and barista equipment"
+        >
+        <div class="hero-content">
+          <div class="hero-copy">
+            <h1>Welcome to Rahma Coffee &amp; Co.</h1>
+            <p>We're not just your average coffee shop. We're an experience waiting to happen! </p>
+            <p>It's always a great day for coffee!</p>
+          </div>
+          <div class="hero-arrows" aria-label="Hero navigation controls">
+            <button class="hero-arrow" type="button" aria-label="Previous slide">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <button class="hero-arrow" type="button" aria-label="Next slide">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Arabic quote strip -->
+    <div class="arabic-quote-wrap">
+      <blockquote class="arabic-quote fade-in" dir="rtl" lang="ar">
+        وأصبحتَ مثل القهوة، في اللذة، والمرارة والإدمان    
+        <cite class="arabic-attribution" dir="rtl" lang="ar">— محمود درويش</cite>
+      </blockquote>
+    </div>
+
+    <!-- Menu introduction section -->
+    <section id="menu-intro">
+      <div class="container split">
+        <div class="fade-in">
+          <span class="section-label">- About Us -</span>
+          <h2 class="section-title">Crafted with Love</h2>
+          <p>Rahma Coffee &amp; Co.'s journey started with a passion for coffee and a dream of creating a space where people could
+            connect, be inspired, and enjoy a great cup of our delicious coffee.</p>
+          <p>With us, every cup begins with intentional sourcing, precise brewing, and a deep respect for the ritual of coffee. 
+            We blend modern technique with timeless comfort to create drinks that feel both elevated and familiar.</p>
+        
+          <ul class="menu-intro-list">
+            <li>Espresso</li>
+            <li>Cappuccino</li>
+            <li>Latte</li>
+            <li>Americano</li>
+            <li>Cold Brew</li>
+            <li>Seasonal Specials - Coming Soon! ;)</li>
+          </ul>
+        </div>
+
+        <figure class="fade-in">
+          <img
+            src="assets/barista.jpg"
+            alt="Barista carefully preparing coffee at an espresso bar"
+          >
+        </figure>
+      </div>
+    </section>
+
+    <!-- Menu grid with featured drinks -->
+    <section id="our-menu" class="menu-grid-section">
+      <div class="container">
+        <span class="section-label fade-in">- Our Menu -</span>
+        <h2 class="section-title fade-in">Our Menu</h2>
+        <p class="section-subtitle fade-in">Crafted with passion, served with perfection</p>
+
+        <div class="cards">
+          <article class="card fade-in">
+            <div class="card-image">
+              <img src="assets/signature-espresso.jpg" alt="Signature espresso in a ceramic cup">
+            </div>
+            <div class="card-body">
+              <h3>Signature Espresso</h3>
+              <p>Rich, bold espresso with perfect crema</p>
+              <a href="#location" class="card-link">Learn More &rarr;</a>
+            </div>
+          </article>
+
+          <article class="card fade-in">
+            <div class="card-image">
+              <img src="assets/vanilla-flat-white.jpg" alt="Vanilla flat white with creamy foam art">
+            </div>
+            <div class="card-body">
+              <h3>Vanilla Flat White</h3>
+              <p>Smooth microfoam with vanilla notes</p>
+              <a href="#location" class="card-link">Learn More &rarr;</a>
+            </div>
+          </article>
+
+          <article class="card fade-in">
+            <div class="card-image">
+              <img src="assets/caramel-latte.jpg" alt="Caramel latte topped with caramel drizzle">
+            </div>
+            <div class="card-body">
+              <h3>Caramel Latte</h3>
+              <p>Creamy latte with caramel drizzle</p>
+              <a href="#location" class="card-link">Learn More &rarr;</a>
+            </div>
+          </article>
+
+          <article class="card fade-in">
+            <div class="card-image">
+              <img src="assets/cold-brew.jpg" alt="Cold brew served over ice in a glass">
+            </div>
+            <div class="card-body">
+              <h3>Cold Brew</h3>
+              <p>Smooth, refreshing cold brew over ice</p>
+              <a href="#location" class="card-link">Learn More &rarr;</a>
+            </div>
+          </article>
+
+          <article class="card fade-in">
+            <div class="card-image">
+              <img src="assets/pumpkin-spice-latte.jpg" alt="Pumpkin spice latte with whipped foam and spices">
+            </div>
+            <div class="card-body">
+              <h3>Pumpkin Spice Latte</h3>
+              <p>Seasonal blend with warm spices</p>
+              <a href="#location" class="card-link">Learn More &rarr;</a>
+            </div>
+          </article>
+
+          <article class="card fade-in">
+            <div class="card-image">
+              <img src="assets/matcha-fusion.jpg" alt="Matcha fusion drink with creamy green tea foam">
+            </div>
+            <div class="card-body">
+              <h3>Matcha Fusion</h3>
+              <p>Green tea meets coffee perfection</p>
+              <a href="#location" class="card-link">Learn More &rarr;</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Community and events section -->
+    <section id="community">
+      <div class="container split">
+        <figure class="community-photo fade-in">
+          <img
+            src="assets/community.jpg"
+            alt="Friends enjoying coffee and conversation in a cozy cafe"
+          >
+        </figure>
+
+        <div class="fade-in">
+          <span class="section-label">- Events &amp; Community -</span>
+          <h2 class="section-title">Join Our Community</h2>
+          <p>Rahma Coffee &amp; Co. is more than a stop for your morning coffee. It's a place for conversations that linger, new ideas that spark, and familiar faces that make the day better. Our space is designed to feel open, inspiring, and easy to return to.</p>
+          <p>From intimate live music nights to tasting events and creative meetups, we love bringing people together over something warm and memorable. Whether you're here to work, unwind, or connect, there's always a seat waiting for you.</p>
+          <a href="#stay-in-touch" class="text-link">See upcoming events &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location section with free OpenStreetMap embed -->
+    <section id="location" class="location-section">
+      <div class="container">
+        <span class="section-label fade-in">- Visit Us -</span>
+        <h2 class="section-title fade-in">Our Location</h2>
+        <p class="section-subtitle fade-in">We're conveniently located in the heart of the city. Follow the irresistible scent of freshly roasted coffee to find us.</p>
+
+        <div class="map-wrap fade-in">
+          <!-- To update the map location later, change the data-marker-lat and data-marker-lng values below. data-lat/lng sets the initial view center. -->
+          <div
+            class="custom-map"
+            id="custom-map"
+            data-lat="44.97265"
+            data-lng="-93.23515"
+            data-zoom="16"
+            data-marker-lat="44.97265"
+            data-marker-lng="-93.23515"
+            aria-label="Map showing Northrop at the University of Minnesota, 84 Church St SE, Minneapolis"
+          >
+            <div class="map-tiles" id="map-tiles" aria-hidden="true"></div>
+            <div class="map-marker" aria-hidden="true"></div>
+            <div class="map-attribution">
+              <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">© OpenStreetMap contributors</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Social banner and footer -->
+  <section id="stay-in-touch" class="social-banner">
+    <div class="container social-grid fade-in">
+      <div class="social-copy">
+        <span class="section-label">- Follow us -</span>
+        <h2 class="section-title">Stay in the loop</h2>
+        <p>Keep up with new drinks, fresh roasts, neighborhood events, and behind-the-counter moments from the Rahma Coffee &amp; Co. team. A little inspiration is always brewing.</p>
+        <div class="social-links" aria-label="Primary social links">
+          <a href="#" aria-label="Instagram">
+            <img src="assets/instagram.png" alt="" class="social-icon">
+          </a>
+          <a href="#" aria-label="TikTok">
+            <img src="assets/tik-tok.png" alt="" class="social-icon">
+          </a>
+          <a href="#" aria-label="Twitter">
+            <img src="assets/twitter.png" alt="" class="social-icon">
+          </a>
+          <a href="#" aria-label="Snapchat">
+            <img src="assets/logo.png" alt="" class="social-icon">
+          </a>
+        </div>
+      </div>
+      <div></div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand pacifico-regular">
+          <span>Rahma Coffee &amp; Co.</span>
+          <img src="assets/coffee-cup.png" alt="" class="logo-cup">
+        </div>
+        <div class="footer-social" aria-label="Footer social links">
+          <a href="#" aria-label="Instagram">
+            <img src="assets/instagram.png" alt="" class="social-icon">
+          </a>
+          <a href="#" aria-label="TikTok">
+            <img src="assets/tik-tok.png" alt="" class="social-icon">
+          </a>
+          <a href="#" aria-label="Twitter">
+            <img src="assets/twitter.png" alt="" class="social-icon">
+          </a>
+          <a href="#" aria-label="Snapchat">
+            <img src="assets/logo.png" alt="" class="social-icon">
+          </a>
+        </div>
+      </div>
+    </footer>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
