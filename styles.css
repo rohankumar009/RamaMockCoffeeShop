@@ -220,8 +220,10 @@ section {
 }
 
 .mobile-drawer {
-  position: fixed;
-  inset: 84px 1rem auto 1rem;
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 1rem;
+  right: 1rem;
   padding: 1rem;
   background: rgba(255, 253, 249, 0.98);
   border: 1px solid var(--border);
