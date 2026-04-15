@@ -34,23 +34,6 @@ document.addEventListener("click", (event) => {
   }
 });
 
-// Simple hero arrow interaction to create a subtle, polished feedback moment
-const heroArrows = document.querySelectorAll(".hero-arrow");
-heroArrows.forEach((button) => {
-  button.addEventListener("click", () => {
-    button.animate(
-      [
-        { transform: "scale(1)" },
-        { transform: "scale(0.93)" },
-        { transform: "scale(1)" }
-      ],
-      {
-        duration: 280,
-        easing: "ease-out"
-      }
-    );
-  });
-});
 
 // Intersection Observer fade-in animation for sections and cards on scroll
 const observer = new IntersectionObserver(

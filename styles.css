@@ -151,6 +151,7 @@ section {
   justify-content: space-between;
   min-height: 84px;
   gap: 1rem;
+  padding-inline: 1.5rem;
 }
 
 .logo {
@@ -317,30 +318,6 @@ section {
   color: rgba(255, 248, 238, 0.86);
 }
 
-.hero-arrows {
-  display: flex;
-  gap: 0.8rem;
-}
-
-.hero-arrow {
-  width: 58px;
-  height: 58px;
-  border: 1px solid rgba(255, 250, 242, 0.24);
-  border-radius: 50%;
-  background: rgba(255, 250, 242, 0.14);
-  color: #fff;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: var(--transition);
-}
-
-.hero-arrow:hover,
-.hero-arrow:focus-visible {
-  transform: translateY(-3px);
-  background: rgba(255, 250, 242, 0.24);
-}
 
 .hero-quote {
   width: min(100%, 900px);
